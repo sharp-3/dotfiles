@@ -1,0 +1,42 @@
+[[language]]
+name      = "rust"
+formatter = { command = "rustfmt" }
+[[language]]
+name      = "typst"
+indent    = { tab-width = 2, unit = "\t" }
+formatter = { command = "typstyle", args = ["--tab-width", "2"] }
+[[language]]
+name = "toml"
+indent = { tab-width = 4, unit = "\t" }
+formatter = { command = "taplo", args = [
+	"format",
+	"-o",
+	"align_entries=true",
+	"-o",
+	"align_comments=true",
+	"-o",
+	"allowed_blank_lines=1",
+	"-o",
+	"indent_string=\t",
+	"-",
+] }
+language-servers = []
+[[language]]
+name = "c"
+indent = { tab-width = 4, unit = "\t" }
+formatter = { command = "clang-format", args = [
+	"""--style={ IndentWidth: 8, UseTab: ForIndentation }""",
+] }
+[[language]]
+name          = "mips"
+scope         = "source.mips"
+file-types    = ["s"]
+comment-token = "#"
+indent        = { tab-width = 8, unit = "\t" }
+formatter     = { command = "mac-mips" }
+[[grammar]]
+name   = "mips"
+source = { git = "https://github.com/Xandaros/tree-sitter-ic10", rev = "3850d0d76251270ad0446b78eec6dddc14c44a4d" }
+[[language]]
+name   = "ron"
+indent = { tab-width = 4, unit = "\t" }
