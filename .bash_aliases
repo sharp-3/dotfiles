@@ -1,0 +1,6 @@
+alias sudo="sudo "
+alias ls="ls -Fh --color=auto --group-directories-first"
+alias l="ls"
+alias la="ls -a"
+alias ll="ls -l --time-style=long-iso"
+alias lla="ls -la --time-style=long-iso"
