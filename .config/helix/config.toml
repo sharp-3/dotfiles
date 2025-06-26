@@ -34,18 +34,6 @@ u = ["undo", "collapse_selection"]
 U = ["redo", "collapse_selection"]
 p = ["paste_after", "collapse_selection"]
 P = ["paste_before", "collapse_selection"]
-#d.d = [
-#	"extend_to_line_bounds",
-#	"yank_main_selection_to_clipboard",
-#	"delete_selection",
-#]
-#x = ["delete_selection"]
-#y.y = [
-#	"extend_to_line_bounds",
-#	"yank_main_selection_to_clipboard",
-#	"normal_mode",
-#	"collapse_selection",
-#]
 F12 = [":set line-number relative"]
 [keys.insert]
 esc = ["collapse_selection", "normal_mode"]
